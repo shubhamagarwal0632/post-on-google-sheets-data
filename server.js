@@ -28,6 +28,9 @@ async function getSheetsClient() {
 }
 
 // API Endpoint: Add Data to Google Sheet
+app.get("/",(req,res)=>{
+    res.send("code is running on post 9000")
+})
 app.post("/add-data", async (req, res) => {
   try {
     const sheets = await getSheetsClient();
